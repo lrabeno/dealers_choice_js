@@ -49,7 +49,9 @@ app.get('/', (req, res) => {
 app.get('/doggos/:id', (req, res) => {
   const id = req.params.id;
   const doggos = dogBank.find(id);
-
+  if (!doggos.id) {
+    throw `This is a bad page. No cute dogs :(`
+  } else {
   res.send(`
   <html>
     <head>  
@@ -72,11 +74,9 @@ app.get('/doggos/:id', (req, res) => {
       </body>
   </html>
   `);
-});
+}});
 
-app.get('/', (req, res) => {
-  throw new Error("Hello error!")
-})
+
 
 
 const port = process.env.PORT || 3000;
