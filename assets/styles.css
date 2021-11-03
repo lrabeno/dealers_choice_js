@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    width: 600px;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+body {
+    background-color: dodgerblue;
+    font-family: verdana;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    color: red;
+    padding: 1rem;
+    border: solid 3px cornsilk;
+    border-radius: 25px;
+}
+
+nav>a {
+    padding: 1rem;
+}
+
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.home-photo {
+    border: solid 3px cornsilk;
+    height: 400px;
+    width: 650px;
+    border-radius: 25px;
+}
+
+.dog-photo {
+    border: solid 3px cornsilk;
+    height: 500px;
+    width: 650px;
+    border-radius: 25px;
+}
